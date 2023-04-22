@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid gray 1px;
+    align-items: center;
+    padding: 15px;
+    
+}
+.login{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: 300px;
+    margin-left: 100px;
+    
+}
+.loginIcon{
+    font-size: 20px;
+   
+}
+#pesquisar{
+    width: 210px;
+    height: 20px;
+    border: none;
+    margin-left: 20px;
+  
+}
+.busca{
+    display: flex;
+    flex-direction: row;
+    border: solid 2px gray;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: 90px;
+}
+.logo{
+    margin-left: 100px;
+ 
+}
+.logo .menuLink{
+    text-decoration: none;
+    color: #000;
+    
+}
+.lupa{
+    font-size: 20px;
+    margin-right: 5px;
+}
+.carrinho{
+    font-size: 25px;
+    margin-right: 100px;
+}
+.menuBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+     gap: 80px;
+    
+   
+}
+
+.menuBar .menuItens{
+    list-style: none;
+    font-size: 16px;
+    border-top:  2px;
+    padding: 20px;
+ 
+   
+}
+.menuItens:hover{
+    border-top: solid;
+    border-color: rgb(248, 142, 159) ;
+}
+.menuItens .menuLink{
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
