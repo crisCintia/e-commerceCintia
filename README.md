@@ -4,7 +4,7 @@
 O objetivo do projeto é a criação de um e-commerce, no caso deste, criaremos um e-commerce para a venda de Maquiagens.
 
 ## Integrantes do projeto
-Alex Machado
+Alex Machado.\
 Cíntia Soares
 
 ## Atualizações feitas no projeto
