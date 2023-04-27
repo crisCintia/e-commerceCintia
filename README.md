@@ -15,7 +15,12 @@ Criação do App utilizando CLI, logo após, o projeto foi enviado para o Github
 18/04/23-25/04/23.\
 Foi criado o menu do e-commerce contendo as principais informações.\
 Caminho da pasta: src --> components --> navbar.\
-dentro da pasta navbar temos os arquivos: NavBar.js ; NavBarBusca.js ; NavBarCarrinho.js ; NavBarLogin.js e NavBarMenu.js
+dentro da pasta navbar temos os arquivos: NavBar.js ; NavBarBusca.js ; NavBarCarrinho.js ; NavBarLogin.js e NavBarMenu.js.\
+
+20/04/23-27/04/23.\
+Foi criado o uma Landing com pelo menos um item, de como será a visualização dos produtos e suas informações.\
+Caminho da pasta: src --> components --> listItens.\
+dentro da pasta listItens temos os arquivos: Itens.js e ListItensContents.js
 
 ## Abaixo temos as informações gerais dos arquivos (Readme padrão)
 _______________________________________________________________________________________________________________________________________________________________________
