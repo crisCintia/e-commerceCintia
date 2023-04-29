@@ -57,15 +57,14 @@
     font-size: 25px;
     margin-right: 100px;
 }
-.menuBar{
+
+.menuContents{
     display: flex;
     flex-direction: row;
     justify-content: center;
      gap: 80px;
-    
    
 }
-
 .menuBar .menuItens{
     list-style: none;
     font-size: 16px;
