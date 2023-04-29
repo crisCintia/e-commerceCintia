@@ -1,0 +1,14 @@
+
+
+.itensContent{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+
+}
+
+.ImageItem{
+    width: 150px;
+    height: 200px;
+}
