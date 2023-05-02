@@ -12,3 +12,27 @@
     width: 150px;
     height: 200px;
 }
+
+.countItens{
+display: flex;
+flex-direction: column;
+
+}
+.countItens .countItensContainer{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:5px;
+}
+
+.inputNumber{
+    width: 30px;
+}
+.addButton:disabled{
+    font-size: 20px;
+    
+}
+.addButton:enabled{
+    font-size: 20px;
+}
