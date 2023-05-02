@@ -20,7 +20,13 @@ dentro da pasta navbar temos os arquivos: NavBar.js ; NavBarBusca.js ; NavBarCar
 20/04/23-27/04/23.\
 Foi criado o uma Landing com pelo menos um item, de como será a visualização dos produtos e suas informações.\
 Caminho da pasta: src --> components --> listItens.\
-dentro da pasta listItens temos os arquivos: Itens.js e ListItensContents.js
+dentro da pasta listItens temos os arquivos: Itens.js e ListItensContents.js.\
+
+25/04/23-02/05/23.\
+Foi criado um contador com botão, que representa a quantidade de itens que o usuário clica para a compra dos produtos, logo abaixo tem o botão "Adicionar ao carrinho", na qual colocamos um alert, somente para informar ao usuário que os itens foram adicionados ao carrinho.\
+Caminho da pasta: src --> components --> listItens.\
+dentro da pasta listItens temos os arquivos: CountItens.js.\
+
 
 ## Abaixo temos as informações gerais dos arquivos (Readme padrão)
 _______________________________________________________________________________________________________________________________________________________________________
