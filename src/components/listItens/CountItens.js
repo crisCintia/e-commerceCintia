@@ -16,7 +16,7 @@ function CountItens({stock="10",initial="1",onAdd}){
         </div>     
                      
         <button className="addButton"  onClick={()=>{
-          
+               alert(itensNumber + " Produto(s) adicionado ao carrinho")
         }}>Adicionar ao carrinho </button>
         </div>
     )
