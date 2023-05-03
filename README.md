@@ -27,7 +27,7 @@ Foi criado um contador com botão, que representa a quantidade de itens que o us
 Caminho da pasta: src --> components --> listItens.\
 dentro da pasta listItens temos os arquivos: CountItens.js.\
 
-##Abaixo informações padrão do README:
+## Abaixo temos as informações gerais dos arquivos (Readme padrão):
 _______________________________________________________________________________________________________________________________________________________________________
 # Getting Started with Create React App
 
