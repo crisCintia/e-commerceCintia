@@ -1,5 +1,4 @@
 import NavBar from './components/navbar/NavBar';
-// import NavBar from './components/navbar/NavBar.js';
 import React from 'react';
 import './styles/ListItensContents.css';
 import './styles/Navbar.css';
