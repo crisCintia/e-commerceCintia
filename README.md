@@ -8,6 +8,26 @@ Alex Machado.\
 Cíntia Soares
 
 ## Atualizações feitas no projeto
+
+13/04/23-20/04/23.\
+Criação do App utilizando CLI, logo após, o projeto foi enviado para o Github.\
+
+18/04/23-25/04/23.\
+Foi criado o menu do e-commerce contendo as principais informações.\
+Caminho da pasta: src --> components --> navbar.\
+dentro da pasta navbar temos os arquivos: NavBar.js ; NavBarBusca.js ; NavBarCarrinho.js ; NavBarLogin.js e NavBarMenu.js.\
+
+20/04/23-27/04/23.\
+Foi criado o uma Landing com pelo menos um item, de como será a visualização dos produtos e suas informações.\
+Caminho da pasta: src --> components --> listItens.\
+dentro da pasta listItens temos os arquivos: Itens.js e ListItensContents.js.\
+
+25/04/23-02/05/23.\
+Foi criado um contador com botão, que representa a quantidade de itens que o usuário clica para a compra dos produtos, logo abaixo tem o botão "Adicionar ao carrinho", na qual colocamos um alert, somente para informar ao usuário que os itens foram adicionados ao carrinho.\
+Caminho da pasta: src --> components --> listItens.\
+dentro da pasta listItens temos os arquivos: CountItens.js.\
+
+##Abaixo informações padrão do README:
 _______________________________________________________________________________________________________________________________________________________________________
 # Getting Started with Create React App
 
