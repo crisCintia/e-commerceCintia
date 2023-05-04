@@ -1,11 +1,11 @@
 import React from "react";
 import Itens from "./Itens";
 /*import imagem from "../imagem/batom.png";*/
-import batom from "../assets/images/batom.png";
-import rimel from "../assets/images/rimel.jpg";
-import base from "../assets/images/base.jpg";
-import blush from "../assets/images/blush.jpg";
-import sombra from "../assets/images/sombra.png";
+import batom from "../images/batom.png";
+import rimel from "../images/rimel.jpg";
+import base from "../images/base.jpg";
+import blush from "../images/blush.jpg";
+import sombra from "../images/sombra.png";
 import CountItens from "./CountItens";
 
 // const BatomImage = new URL("./batom.png", import.meta.url)
