@@ -27,6 +27,12 @@ Foi criado um contador com botão, que representa a quantidade de itens que o us
 Caminho da pasta: src --> components --> listItens.\
 dentro da pasta listItens temos os arquivos: CountItens.js.\
 
+27/04/23-04/05/23.\
+DESAFIO ENVIADO PELO GITHUB: https://github.com/crisCintia/e-commerce-maquiagem.git .\
+Nesse desafio criamos um catálogo com maps e promises, mostrando como será a apresentação dos produtos. Criamos uma pasta chamada "catalogo" onde adicionamos o arquivo ItemListContainer.js, os arquivos Itens.js e ListItensContents.js estão na pasta "listItens", segue o caminho para os arquivos:.\
+1) Pasta Catalogo: src --> components --> catalogo --> contendo o arquivo ItemListContainer.js.\
+2) Pasta Item List: src --> components --> listItens --> contendo os arquivos Itens.js e ListItensContents.js.\
+
 ## Abaixo temos as informações gerais dos arquivos (Readme padrão):
 _______________________________________________________________________________________________________________________________________________________________________
 # Getting Started with Create React App
