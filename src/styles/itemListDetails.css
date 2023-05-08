@@ -1,0 +1,19 @@
+.cardDetailsContainer{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+ 
+    height: 500px;
+}
+
+.cardDetailsImage{
+    width: 400px;
+    height: 400px;
+    
+}
+
+.buyButton{
+    width: 300px;
+}
+

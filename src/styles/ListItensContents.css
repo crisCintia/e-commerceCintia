@@ -29,13 +29,19 @@ flex-direction: column;
 .inputNumber{
     width: 30px;
 }
-.addButton:disabled{
-    font-size: 20px;
+.addButton{
+    color:white;
+    background-color:#0a58ca;
+    border-radius: 5px;
+    height: 40px;
+    width: 300px;
+}
+.addButton:hover{
+  
+    background-color: #0d6efd;;
     
 }
-.addButton:enabled{
-    font-size: 20px;
-}
+
 .itemContainerList{
     display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
