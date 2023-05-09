@@ -33,7 +33,7 @@ Nesse desafio criamos um catálogo com maps e promises, mostrando como será a a
 1) Pasta Catalogo: src --> components --> catalogo --> contendo o arquivo ItemListContainer.js.\
 2) Pasta Item List: src --> components --> listItens --> contendo os arquivos Itens.js e ListItensContents.js.\
 
-02/05/23-09/05/23.
+02/05/23-09/05/23.\
 Foi criado dois arquivos, o primeiro é o ItemDetailContainer.js que tem a mesma premissa que o ItemListContents.js para visualizar os produtos na página, nela foi adicionado um efeito de montagem utilizando promise e um async mock usando setTimeout de duração de 2 segundos. Por fim, utilizamos o then para retornar o ItemDetails.js. O arquivo ItemDetails.js tem o objetivo de mostrar a visualização dos detalhes de um item, que tem os seguintes componentes: nome, preço, descrição do produto, botão "Comprar (Detalhes)" e botão "Adicionar ao carrinho".\
 Caminho da pasta: src --> components --> datails.
 dentro da pasta datails temos os arquivos: ItemDetails.js, ItemListDetails.js e a pasta mockDetails, com o arquivo productsDetails.js.\
