@@ -5,6 +5,7 @@ import './styles/Navbar.css';
 import ListItensContents from './components/listItens/ListItensContents';
 import ItemListDetails from './components/datails/ItemListDetails';
 import "./styles/itemListDetails.css"
+import { BrowserRouter, Router,Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <NavBar/>
         <section>
         <ListItensContents/>
-        <ItemListDetails/>
+        <ItemListDetails idProdutos={1}/>
           
         </section>
         

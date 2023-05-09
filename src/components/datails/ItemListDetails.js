@@ -4,14 +4,15 @@ import { productsDetails } from "./mockDetails/productsDetails";
 import ItemDetails from "./ItemDetails";
 
 
-function ItemListDetails(){
+function ItemListDetails({idProdutos}){
      const [myDetails, setMyDetails]=useState([])
+     const [loading, setLoading]=useState(true)
     function getProductsDetails(){
 
        return new Promise( (resolve, rejected)=>{
 
-            resolve(productsDetails)
-            console.log("🚀 ~ file: ItemListDetails.js:15 ~ returnnewPromise ~ productsDetails:", productsDetails)
+            resolve(productsDetails.find(p=>p.id ===parseInt(idProdutos)));
+          
 
         })
     }
@@ -20,12 +21,24 @@ function ItemListDetails(){
         setTimeout(()=>{
             getProductsDetails()
               .then(result => setMyDetails(result))
+        setLoading(false)
         }, 2000)
 
     })
+    if(loading){
+        return(
+            <div className="spinner-grow text-secondary spinnerListItens" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+        )
+    }
     return(
 
-       myDetails.map(element =><p><ItemDetails cardItem= {element}/></p> )
+        <div>
+            <ItemDetails cardItem= {myDetails}/> 
+        </div>
+
+      
 
     )
 }
