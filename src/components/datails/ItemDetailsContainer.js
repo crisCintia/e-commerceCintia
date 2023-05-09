@@ -4,7 +4,7 @@ import { productsDetails } from "./mockDetails/productsDetails";
 import ItemDetails from "./ItemDetails";
 
 
-function ItemListDetails({idProdutos}){
+function ItemDetailsContainer({idProdutos}){
      const [myDetails, setMyDetails]=useState([])
      const [loading, setLoading]=useState(true)
     function getProductsDetails(){
@@ -42,4 +42,4 @@ function ItemListDetails({idProdutos}){
 
     )
 }
-export default ItemListDetails
+export default ItemDetailsContainer
