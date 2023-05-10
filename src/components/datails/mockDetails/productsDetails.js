@@ -2,49 +2,42 @@ export const productsDetails = [
     {
         id:1,
         nome:"Batom Stick",
-        descricao:"cor vermelho",
+        descricao:"Cor Rosa Nude",
         preco: "30,00",
-        imagem:"https://a-static.mlcdn.com.br/280x210/batom-stick-fps-15-make-b-hyaluronic-34-g-maquiagem/perfeicaoperfumescosmeticos/ffc73b043dd211ec82564201ac185033/8f662a45617b1e45d98b38becf66785b.jpeg",
-        categoria:"Pele",
-    
+        imagem:"https://images.unsplash.com/photo-1555050455-f96634b5cba6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        categoria:"Boca",
     },
     {
         id:2,
-        nome:"Delineador Líquido",
+        nome:"Delineador em gel, com pincel",
         descricao:"cor preto",
         preco: "20,00",
         categoria:"Olhos",
-        imagem:"https://a-static.mlcdn.com.br/800x560/delineador-liquido-preto-ruby-rose/analumakeseacessorios/10875758c96111eb9db34201ac18500e/35b9ab2784656d0ae139bb29e77213d8.jpeg"
-
-    
+        imagem:"https://images.unsplash.com/photo-1620804587331-effc68d47d7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
     },
     {
         id:3,
         nome:"Base",
         descricao:"base pele",
         preco: "100,00",
-        categoria: "Boca",
-        imagem:"https://a-static.mlcdn.com.br/280x210/base-em-mousse-tracta/epocacosmeticos-integra/65432/57128bbf64b76b853d17025b6a9a05df.jpeg"
-    
+        categoria: "Face",
+        imagem:"https://images.unsplash.com/photo-1599733589046-10c005739ef9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
     },
-    
     {
         id:4,
-        nome:"Máscara facial",
-        descricao:"Hidratação facial",
+        nome:"Hidratante facial",
+        descricao:"Creme facial com protetor solar",
         preco: "70,00",
         categoria: "Skincare",
-        imagem:"https://www.sephora.com.br/dw/image/v2/BFJC_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/pt_BR/dwf69ae146/images/hi-res-BR/KS_HFM_21_9ml_0.3oz_1500px.jpg?sw=1200&sh=1200&sm=fit"
-    
+        imagem:"https://images.unsplash.com/photo-1643769993605-14aef20d9e33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
     },
     {
         id:5,
         nome:"Batom Líquido",
         descricao:"cor Matte",
         preco: "50,00",
-        imagem:"https://a-static.mlcdn.com.br/280x210/batom-liquido-matte-niina-secrets-skinny-eudora-4ml/mebabocom/10731-bat-skinnyeud-vinhj/5b888f7f9eacd1575cc4650c1de6dd66.jpeg",
+        imagem:"https://images.unsplash.com/photo-1635011340527-f7aeac346b01?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
         categoria:"Boca",
-    
     },
     {
         id:6,
@@ -52,19 +45,15 @@ export const productsDetails = [
         descricao:"cor preto",
         preco: "20,00",
         categoria:"Olhos",
-        imagem:"https://a-static.mlcdn.com.br/280x210/lapis-de-olho-maybelline-sensational/epocacosmeticos-integra/55611/f69e0189190dd9d9551c6d3847de8c99.jpeg"
-
-    
+        imagem:"https://images.unsplash.com/photo-1631214499031-6845d10b7694?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80"
     },
     {
         id:7,
-        nome:"Pó facial",
-        descricao:"Ideal para a área dos olhos",
+        nome:"Pó Translúcido",
+        descricao:"Ideal para a área dos olhos, teste e nariz",
         preco: "80,00",
         categoria:"Face",
-        imagem:"https://a-static.mlcdn.com.br/280x210/po-para-area-dos-olhos-soft-eye-lfpro-lfpro-lu-ferraes/belongbe/456765098-2/ec75ef30088bdae09f61b37592233875.jpeg"
-
-    
+        imagem:"https://images.unsplash.com/photo-1515688594390-b649af70d282?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=806&q=80"
     },
     {
         id:8,
@@ -72,9 +61,78 @@ export const productsDetails = [
         descricao:"Bífásico para pele mista",
         preco: "80,00",
         categoria:"Skincare",
-        imagem:"https://a-static.mlcdn.com.br/280x210/demaquilante-bifasico-pele-mista-ruby-rose/elpatron1/aa1d207e5f6011ec832b4201ac18503a/7b16bde9f48c2521ed5fba599bd20ddc.jpeg"
-
-    
+        imagem:"https://images.unsplash.com/photo-1641964946680-ca49851359af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=423&q=80"    
     },
-    
-    ]
+    {
+        id:9,
+        nome:"Rímel",
+        descricao:"Rímel de longa duração, cor preto",
+        preco: "65,00",
+        categoria:"Olhos",
+        imagem:"https://images.unsplash.com/photo-1631214540553-ff044a3ff1d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+    },
+    {
+        id:10,
+        nome:"Kit de Pincéis",
+        descricao:"Kit com 8 pincéis de cerdas naturais",
+        preco: "65,00",
+        categoria:"Olhos",
+        imagem:"https://images.unsplash.com/photo-1631214500020-e56e3d7eabb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80"
+    },
+    {
+        id:11,
+        nome:"Kit SkinCare",
+        descricao:"Kit espuma de limpeza, tônico hidratante e hidratante facial para todos os tipos de peles",
+        preco: "65,00",
+        categoria:"Skincare",
+        imagem:"https://images.unsplash.com/photo-1595521969746-7d87f7480fc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1034&q=80"
+    },
+    {
+        id:12,
+        nome:"Protetor Solar",
+        descricao:"Protetor Solar da La Roche-Posay, fator 70, para todos os tipos de peles",
+        preco: "65,00",
+        categoria:"Skincare",
+        imagem:"https://images.unsplash.com/photo-1594527964562-32ed6eb11709?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=697&q=80"
+    },
+    {
+        id:13,
+        nome:"Corretivo Líquido",
+        descricao:"Corretivo ideal para a área dos olhos",
+        preco: "65,00",
+        categoria:"Face",
+        imagem:"https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+        id:14,
+        nome:"Contorno Líquido",
+        descricao:"Contorno ideal para ser usado com esponjas",
+        preco: "65,00",
+        categoria:"Face",
+        imagem:"https://images.unsplash.com/photo-1598412795976-9c195182ee01?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+        id:15,
+        nome:"Iluminador Líquido",
+        descricao:"Iluminador líquido, ideal para utilizar na finalização da make",
+        preco: "65,00",
+        categoria:"Face",
+        imagem:"https://images.unsplash.com/photo-1585652757173-57de5e9fab42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+        id:16,
+        nome:"Sombra",
+        descricao:"Estojo de sompra com píncel",
+        preco: "65,00",
+        categoria:"Olhos",
+        imagem:"https://images.unsplash.com/photo-1627260125421-da3b2f00108f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+        id:17,
+        nome:"Esponjas",
+        descricao:"Kit com 4 esponjas para maquiar",
+        preco: "65,00",
+        categoria:"Face",
+        imagem:"https://images.unsplash.com/photo-1631214499995-468422da65d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=726&q=80"
+    },
+   ]
