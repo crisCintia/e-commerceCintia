@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import { BsPlusSquare } from "react-icons/bs";
 import { BsDashSquare } from "react-icons/bs";
 
-function CountItens({stock="10",initial="1",onAdd}){
+function CountItens({stock=10,initial=1,onAdd}){
        
     const [itensNumber, setIntensNumber]=useState(1)
     
