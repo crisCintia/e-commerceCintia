@@ -29,10 +29,44 @@ flex-direction: column;
 .inputNumber{
     width: 30px;
 }
-.addButton:disabled{
-    font-size: 20px;
+.addButton{
+    color:white;
+    background-color:#0a58ca;
+    border-radius: 5px;
+    height: 40px;
+    width: 300px;
+}
+.addButton:hover{
+  
+    background-color: #0d6efd;;
     
 }
-.addButton:enabled{
-    font-size: 20px;
+
+.itemContainerList{
+    display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 50px 50px; 
+    padding: 80px;
+  
+ 
+}
+.itemContainer{
+
+ padding: 20px;
+text-align: center;
+   
+}
+.cardItem{
+    width: 18em;
+}
+.cardItemList{
+    list-style: none;
+}
+.card-img-top{
+    width: 80px;
+    height: 250px;
+}
+.spinnerListItens{
+    margin-left: 50%;
 }

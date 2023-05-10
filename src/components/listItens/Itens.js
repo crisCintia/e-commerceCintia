@@ -1,17 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Itens({ imagem, produto, descricao,preco}) {
+
+function Itens({ item }) {
     return (
+    
+           <div className="itemContainer">
+             
+               <ul>
+                <li className="cardItemList">
+                <div className="cardItem">
+                    <img src= {item.imagem} className="card-img-top cardImage" alt="..."/>
+                        <div className="card-body">
+                            <h5 className="card-title">{item.nome}</h5>
+                            <p className="card-text">{item.descricao}</p>
+                            <p> R$ {item.preco}</p>
+                            <Link to={`/item/${item.id}`} class="btn btn-primary">Detalhes</Link>
+                        </div>
+                     
+                </div>
 
-            <div>
-                <img className="ImageItem" src = {imagem} alt=""/>
-                <p>{produto}</p>
-                <p>Descrição:{descricao}</p>
-                <p>Preço:{preco}</p>
+                </li>
+               </ul>
+                 
             </div>
-        
-
-
+              
     )
 
 }
