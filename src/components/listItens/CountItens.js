@@ -10,9 +10,9 @@ function CountItens({stock="10",initial="1",onAdd}){
      
         <div className="countItens"> 
         <div className="countItensContainer" >
-        {itensNumber<=1?<BsDashSquare/>:<BsDashSquare  className= "dashButton" onClick={()=>{if( itensNumber < stock ) {setIntensNumber(anterior=>anterior-1)}}} />}
+        {itensNumber<=1?<BsDashSquare/>:<BsDashSquare  className= "dashButton" onClick={()=>{setIntensNumber(anterior=>anterior-1)}}/>}
          <input className="inputNumber" type="text" value= {itensNumber} />
-        <BsPlusSquare className= "plusButton"  onClick={()=>{setIntensNumber(anterior=>anterior+1)}}/>
+        <BsPlusSquare className= "plusButton"  onClick={()=>{if( itensNumber < stock ){setIntensNumber(anterior=>anterior+1)}}}/>
         </div>     
                      
         <button className="addButton"  onClick={()=>{
