@@ -1,5 +1,6 @@
 import React from "react";
 import CountItens from "../listItens/CountItens";
+import { Link } from "react-router-dom";
 
 
 function ItemDetails({cardItem}){

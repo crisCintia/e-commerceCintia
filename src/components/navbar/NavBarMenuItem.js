@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom"
+
+
 function NavBarMenuItem ( {categoria , link}){
     return(
            
             
-            <a className="menuLink"   href={link}>{categoria}</a>  
-            
-            
+            <Link className="menuLink"  to={link}>{categoria}</Link>  
            
     )
 }

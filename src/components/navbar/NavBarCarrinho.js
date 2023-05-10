@@ -1,9 +1,13 @@
 import {BiShoppingBag} from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 
 function NavBarCarrinho(){
     return(
-        <BiShoppingBag className="carrinho"/>    
+        
+        <Link to="/cart">
+            <BiShoppingBag className="carrinho"/> 
+        </Link>   
 
     )
 }

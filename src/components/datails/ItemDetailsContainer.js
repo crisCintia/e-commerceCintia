@@ -2,16 +2,20 @@ import React,{useState,useEffect} from "react";
 
 import { productsDetails } from "./mockDetails/productsDetails";
 import ItemDetails from "./ItemDetails";
+import { useParams } from "react-router-dom";
 
 
-function ItemDetailsContainer({idProdutos}){
+function ItemDetailsContainer(){
      const [myDetails, setMyDetails]=useState([])
      const [loading, setLoading]=useState(true)
-    function getProductsDetails(){
+     const {itemId}=useParams()
+    
+     function getProductsDetails(){
+
 
        return new Promise( (resolve, rejected)=>{
 
-            resolve(productsDetails.find(p=>p.id ===parseInt(idProdutos)));
+            resolve(productsDetails.find(p=>p.id ===parseInt(itemId)));
           
 
         })

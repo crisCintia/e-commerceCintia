@@ -23,6 +23,7 @@
 }
 .loginIcon{
     font-size: 20px;
+    text-decoration: none;
    
 }
 #pesquisar{
@@ -48,6 +49,10 @@
     text-decoration: none;
     color: #000;
     
+}
+.loginLink{
+    list-style: none;
+    text-decoration: none;
 }
 .lupa{
     font-size: 20px;
