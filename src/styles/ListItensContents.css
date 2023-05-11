@@ -71,3 +71,7 @@ flex-direction: column;
 .spinnerListItens{
     margin-left: 50%;
 }
+
+.card-body {
+    margin-top: 14px;
+}
