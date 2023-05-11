@@ -33,6 +33,20 @@ Nesse desafio criamos um catálogo com maps e promises, mostrando como será a a
 1) Pasta Catalogo: src --> components --> catalogo --> contendo o arquivo ItemListContainer.js.\
 2) Pasta Item List: src --> components --> listItens --> contendo os arquivos Itens.js e ListItensContents.js.\
 
+02/05/23-09/05/23.\
+Foi criado dois arquivos, o primeiro é o ItemDetailContainer.js que tem a mesma premissa que o ItemListContents.js para visualizar os produtos na página, nela foi adicionado um efeito de montagem utilizando promise e um async mock usando setTimeout de duração de 2 segundos. Por fim, utilizamos o then para retornar o ItemDetails.js. O arquivo ItemDetails.js tem o objetivo de mostrar a visualização dos detalhes de um item, que tem os seguintes componentes: nome, preço, descrição do produto, botão "Comprar (Detalhes)" e botão "Adicionar ao carrinho".\
+Caminho da pasta: src --> components --> datails.
+dentro da pasta datails temos os arquivos: ItemDetails.js, ItemListDetails.js e a pasta mockDetails, com o arquivo productsDetails.js.\
+
+04/05/23-11/05/23.\
+Primeira entrega do Projeto.\
+Nessa entrega criamos o roteamento e navegação do projeto, para que o usuário consiga navegar pelas páginas criadas pelo e-commerce. Conforme ensinado em aula, usamos o "react-router-dom" para criar as Routes. Realizamos as seguintes atualizações:.\
+  1) Adicionamos "import { Link } from 'react-router-dom'" alterando a tag <a> pela <Link>, fizemos isso nos arquivos: NavBar.js; NavBarCarrinho.js; NavBarLogin.js; NavBarMenuItem.js; Itens.js; ItemDetails.js;.\
+  2) Adicionamos "import { useParams } from "react-router-dom"" nos arquivos ListItensContents.js e ItemDetailsContainer.js.\
+  3) Adicionamos "import { BrowserRouter, Routes ,Route} from 'react-router-dom'" no arquivo App.js.\
+  4) Para inclusão do ícones, utilizamos "npm install react-icons --save".\
+ Com isso, temos os componentes completos: NavBar com carrinho, Catálogo e Detalhes do Produto.\
+
 ## Abaixo temos as informações gerais dos arquivos (Readme padrão):
 _______________________________________________________________________________________________________________________________________________________________________
 # Getting Started with Create React App
