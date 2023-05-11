@@ -25,9 +25,15 @@
     font-family: 'Rubik', sans-serif;
 }
 
+.LoginText {
+    text-decoration: none;
+    color: #000;
+}
+
 .loginIcon{
     font-size: 20px;
-    text-decoration: none;   
+    text-decoration: none;
+    color: #000;
 }
 
 #pesquisar{
@@ -71,6 +77,9 @@
 .carrinho{
     font-size: 25px;
     margin-right: 100px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
 }
 
 .menuContents{
