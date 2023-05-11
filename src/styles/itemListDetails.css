@@ -14,10 +14,16 @@
 
 .cardDetailsImage{
     width: 250px;
-    height: 280px; 
+    height: 280px;
+    text-decoration: none; 
 }
 
 .buyButton{
     width: 300px;
+}
+
+.CardDetailsNome {
+    text-decoration: none;
+    color: #000
 }
 
