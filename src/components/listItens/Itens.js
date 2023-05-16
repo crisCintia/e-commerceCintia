@@ -13,7 +13,7 @@ function Itens({ item }) {
                             <h5 className="card-title">{item.nome}</h5>
                             <p className="card-text">{item.descricao}</p>
                             <p> R$ {item.preco}</p>
-                            <Link to={`/item/${item.id}`} class="btn btn-primary">Detalhes</Link>
+                            <Link to={`/item/${item.id}`} className="btn btn-primary">Detalhes</Link>
                         </div>
                 </div>
                 </li>
