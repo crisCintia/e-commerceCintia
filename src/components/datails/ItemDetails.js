@@ -8,9 +8,9 @@ function ItemDetails({cardItem}){
        
   <div className="container  cardDetailsContainer">
             
-            <div class="cardDetailImageContent" >
+            <div className="cardDetailImageContent" >
             <img src={cardItem.imagem}
-              class=" cardDetailsImage"
+              className=" cardDetailsImage"
               alt="Laptop" />
             <a href=""></a>
 
