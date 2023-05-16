@@ -5,8 +5,6 @@ function Itens({ item }) {
     return (
     
            <div className="itemContainer">
-             
-               <ul>
                 <li className="cardItemList">
                 <div className="cardItem">
                     <img src= {item.imagem} className="card-img-top cardImage" alt="..."/>
@@ -16,15 +14,9 @@ function Itens({ item }) {
                             <p> R$ {item.preco}</p>
                             <a href="#" class="btn btn-primary">Detalhes</a>
                         </div>
-                     
                 </div>
-
                 </li>
-               </ul>
-                 
             </div>
-              
     )
-
 }
 export default Itens
