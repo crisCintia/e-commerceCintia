@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 function ItemDetails({cardItem}){
     return(
-        <div class="container  cardDetailsContainer">
-        <div class="cardDetailImageContent" >
-            <img src={cardItem.imagem} class=" cardDetailsImage" alt="Laptop" /><a href=""></a>
+        <div className="container  cardDetailsContainer">
+        <div className="cardDetailImageContent" >
+            <img src={cardItem.imagem} className=" cardDetailsImage" alt="Laptop" /><a href=""></a>
         </div>
         <div className="cardDetailsItensContent">
             <p><a href="#!" className= "cardDetailsImage text-dark">{cardItem.nome}</a></p>
