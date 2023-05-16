@@ -20,6 +20,11 @@
 
 .buyButton{
     width: 300px;
+    margin-bottom: 10px;
+}
+
+.addButton {
+    margin-top: 10px;
 }
 
 .CardDetailsNome {

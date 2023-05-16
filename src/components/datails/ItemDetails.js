@@ -11,7 +11,7 @@ function ItemDetails({cardItem}){
         </div>
         <div className="cardDetailsItensContent">
             <p><a href="#!" className= "cardDetailsImage text-dark">{cardItem.nome}</a></p>
-            <p><a href="#!" className=" CardDetailsNome ">{cardItem.preco}</a></p>7
+            <p>R$ <a href="#!" className=" CardDetailsNome ">{cardItem.preco}</a></p>7
             <p> Descrição do produto: {cardItem.descricao}</p>
             <CountItens/>
               <button type="button" className=" buyButton btn btn-primary">Comprar</button>
