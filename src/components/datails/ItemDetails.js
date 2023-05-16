@@ -6,7 +6,7 @@ function ItemDetails({cardItem}){
 
     return(
        
-  <div class="container  cardDetailsContainer">
+  <div className="container  cardDetailsContainer">
             
             <div class="cardDetailImageContent" >
             <img src={cardItem.imagem}
