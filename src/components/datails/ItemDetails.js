@@ -16,7 +16,7 @@ function ItemDetails({cardItem}){
             <CountItens/>
               <button type="button" className=" buyButton btn btn-primary">Comprar</button>
          </div>
-          </div>
+         </div>
     )
 }
 

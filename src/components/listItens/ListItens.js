@@ -5,7 +5,7 @@ import Itens from "./Itens"
 function ListItens ({itens}){
     return (itens.map((p)=>
         
-        <p><Itens key={p.id} item={p}/></p>
+        <ul><Itens key={p.id} item={p}/></ul>
         
         )) 
   

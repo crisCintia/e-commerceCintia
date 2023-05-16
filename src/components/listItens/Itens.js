@@ -14,7 +14,7 @@ function Itens({ item }) {
                             <p className="card-text">{item.descricao}</p>
                             <p> R$ {item.preco}</p>
                             <Link to={`/item/${item.id}`} className="btn btn-primary">Detalhes</Link>
-                        </div>    
+                        </div>
                 </div>
                 </li>
             </div>
