@@ -9,7 +9,7 @@ function ItemDetails({ cardItem }) {
 
     const naoAdicionado = true;
 
-    const InputComponent = true ? CountItens : InputComponent;
+    //const InputComponent = true ? CountItens : InputComponent;
 
     function handleOnChangeQtd(qtd) {
         setAmmount(qtd);
@@ -28,7 +28,7 @@ function ItemDetails({ cardItem }) {
                 {/*<p>Quantidade: <CountItens/></p> - PRIMEIRA APLICAÇÃO DA QUANTIDADE
             <button type="button" className=" buyButton btn btn-primary">Comprar</button>*/}
                 {/* ABAIXO A APLICAÇÃO APÓS A AULA 9 - EVENTOS*/}
-                {naoAdicionado ? <InputComponent
+                {naoAdicionado ? <CountItens
                     stock={cardItem.estoque}
                     qtd={ammount}
                     onChangeQtd={handleOnChangeQtd} /> : <Link to="/cart"><button className="buyButton btn btn-primary">
