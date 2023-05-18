@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import CountItens from "../listItens/CountItens";
 import { Link } from "react-router-dom";
+import CartContextProvider, { useCartContext } from "../../contexts/CartContext";
 
 
 
@@ -12,6 +13,8 @@ function ItemDetails({ cardItem }) {
     function handleOnChangeQtd(qtd) {
         setAmmount(qtd);
     }
+
+    const {addToCart} = useCartContext();
 
     return (
         <div className="container  cardDetailsContainer">
@@ -31,9 +34,9 @@ function ItemDetails({ cardItem }) {
                     qtd={ammount}
                     onChangeQtd={handleOnChangeQtd} /> : <Link to="/cart"><button className="buyButton btn btn-primary">
                         Ir para o Carrinho</button></Link>}
-                <Link to={`/cart${cardItem.id}`}><button className="buyButton btn btn-primary" onClick={() => {
-                    clearInterval(ammount); setAmmount(1); alert(ammount + " Produto(s) adicionado ao carrinho")
-                }}>Adicionar ao carrinho</button></Link>
+                <CartContextProvider><button className="buyButton btn btn-primary" onClick={() => {
+                    clearInterval(ammount); setAmmount(1); addToCart(cardItem.id, cardItem.qtd); alert(ammount + " Produto(s) adicionado ao carrinho")
+                }}>Adicionar ao carrinho</button></CartContextProvider>
             </div>
         </div>
     )

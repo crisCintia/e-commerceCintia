@@ -1,8 +1,57 @@
-import {createContext} from 'react';
+import {createContext, useContext, useState} from 'react';
+import ItemDetails from '../components/datails/ItemDetails';
 
 export const Cart = createContext([]);
 
 export const CartContext = createContext([]);
+export const useCartContext = () => useContext(CartContext);
+
+export default function CartContextProvider({defaultValue={}, children}) {
+    const [itens, setItens] = useState([]);
+    //{id:1, ammount:5}, {id:2, ammount:7} - exemplo
+    //const [item, setItem] = useState()
+
+    function clear(){
+        setItens([]);
+    }
+
+    function getItemQtd(){
+        return itens.reduce((accumulator, currentValue) => parseInt(accumulator + currentValue.qtd), 0)
+    }
+
+    function addToCart(id){
+        const cartItens = [...itens];
+        const cartValid = cartItens.find((product) => product.id ===id);
+
+        if (!cartValid) {
+            cartItens.push({id:id, qtd:1});
+        } 
+        else {
+            cartValid.qtd = parseInt(cartValid.qtd + 1);
+        }
+        setItens(cartItens);
+    }
+
+    function removeCart(id) {
+        const cartItens = [...itens];
+        const cartValid = cartItens.find((product) => product.id ===id);
+
+        if(cartValid.qtd >1){
+            cartValid.qtd = parseInt(cartValid.qtd-1);
+            setItens(cartValid);
+        }else{
+            const arrayFilter = cartItens.filter(product => product.id !== id);
+            setItens(arrayFilter);
+        }
+    }
+     
+
+    return(
+        <CartContext.Provider value={{itens, clear, getItemQtd,addToCart,removeCart}}>
+            {children}
+        </CartContext.Provider>
+    )
+}
 
 
 //const carrinho = useContext(ItemDetails)
