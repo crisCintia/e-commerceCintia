@@ -1,7 +1,6 @@
-import React, { useState,useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import CountItens from "../listItens/CountItens";
 import { Link } from "react-router-dom";
-import { CartContext } from "../../contexts/CartContext";
 
 
 
@@ -14,11 +13,6 @@ function ItemDetails({ cardItem }) {
         setAmmount(qtd);
     }
 
-    const carrinho = useContext(CartContext);
-    let qtdProdutos = 0
-    carrinho.forEach(p => qtdProdutos += p.qtd)
-    console.log(carrinho)
-
     return (
         <div className="container  cardDetailsContainer">
             <div className="cardDetailImageContent" >
@@ -30,16 +24,16 @@ function ItemDetails({ cardItem }) {
                 <p> Descrição do produto: {cardItem.descricao}</p>
                 <p> Em estoque: {cardItem.estoque}</p>
                 {/*<p>Quantidade: <CountItens/></p> - PRIMEIRA APLICAÇÃO DA QUANTIDADE
-            <button type="button" className=" buyButton btn btn-primary">Comprar</button>*/}
+                    <button type="button" className=" buyButton btn btn-primary">Comprar</button>*/}
                 {/* ABAIXO A APLICAÇÃO APÓS A AULA 9 - EVENTOS*/}
                 {naoAdicionado ? <CountItens
                     stock={cardItem.estoque}
                     qtd={ammount}
                     onChangeQtd={handleOnChangeQtd} /> : <Link to="/cart"><button className="buyButton btn btn-primary">
                         Ir para o Carrinho</button></Link>}
-                <button className="buyButton btn btn-primary" onClick={() => {
+                <Link to={`/cart${cardItem.id}`}><button className="buyButton btn btn-primary" onClick={() => {
                     clearInterval(ammount); setAmmount(1); alert(ammount + " Produto(s) adicionado ao carrinho")
-                }}>Adicionar ao carrinho</button>
+                }}>Adicionar ao carrinho</button></Link>
             </div>
         </div>
     )

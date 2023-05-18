@@ -1,7 +1,9 @@
-import { createContext, useContext } from "react";
-import ItemDetails from "../components/datails/ItemDetails";
+import {createContext} from 'react';
+
+export const Cart = createContext([]);
 
 export const CartContext = createContext([]);
+
 
 //const carrinho = useContext(ItemDetails)
 //carrinho.forEach(p => p.cardItem)

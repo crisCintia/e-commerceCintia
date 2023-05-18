@@ -8,13 +8,12 @@ import "./styles/itemListDetails.css";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBarCarrinho from './components/navbar/NavBarCarrinho';
 import NavBarLogin from './components/navbar/NavBarCarrinho';
-import { CartContext } from './contexts/CartContext';
-import ItemDetails from './components/datails/ItemDetails';
+import {Cart} from './contexts/CartContext';
 
 function App() {
   return (
     <BrowserRouter>
-      <CartContext.Provider value={[{ ItemDetails }]}>
+    <Cart.Provider value={[{id:1, ammount:5}]}>
         <div className="App">
           <NavBar />
           <Routes>
@@ -29,7 +28,7 @@ function App() {
           <section>
           </section>
         </div>
-      </CartContext.Provider>
+        </Cart.Provider>
     </BrowserRouter>
   );
 }

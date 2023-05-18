@@ -1,14 +1,14 @@
 import { useContext } from "react";
 import {BiShoppingBag} from "react-icons/bi";
 import { Link } from "react-router-dom";
-import { CartContext } from "../../contexts/CartContext";
+import { Cart } from "../../contexts/CartContext";
 
 
 function NavBarCarrinho(){
-    const valor = useContext(CartContext);
+    const valor = useContext(Cart);
 
     let qdtProdutos = 0
-    //valor.forEach(p => qdtProdutos += p.ammount);
+    valor.forEach(p => qdtProdutos += p.ammount);
 
     return(        
         <Link to="/cart">
