@@ -1,19 +1,23 @@
-import React, { useState,useEffect } from "react";
+import React, { useState,useEffect, useContext } from "react";
 import CountItens from "../listItens/CountItens";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../contexts/CartContext";
 
 
 
 function ItemDetails({ cardItem }) {
     const [ammount, setAmmount] = useState(1);
-
     const naoAdicionado = true;
-
     //const InputComponent = true ? CountItens : InputComponent;
 
     function handleOnChangeQtd(qtd) {
         setAmmount(qtd);
     }
+
+    const carrinho = useContext(CartContext);
+    let qtdProdutos = 0
+    carrinho.forEach(p => qtdProdutos += p.qtd)
+    console.log(carrinho)
 
     return (
         <div className="container  cardDetailsContainer">
