@@ -1,3 +1,5 @@
+//import CountItens from "../../listItens/CountItens";
+
 export const productsDetails = [
     {
         id:1,
@@ -6,6 +8,8 @@ export const productsDetails = [
         preco: "30,00",
         imagem:"https://images.unsplash.com/photo-1555050455-f96634b5cba6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
         categoria:"Boca",
+        //estoque: <CountItens stock={13}/>,
+        estoque: 13,
     },
     {
         id:2,
@@ -13,7 +17,9 @@ export const productsDetails = [
         descricao:"cor preto",
         preco: "20,00",
         categoria:"Olhos",
-        imagem:"https://images.unsplash.com/photo-1620804587331-effc68d47d7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+        imagem:"https://images.unsplash.com/photo-1620804587331-effc68d47d7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+        //estoque: <CountItens stock={18}/>,
+        estoque: 18,
     },
     {
         id:3,
@@ -21,7 +27,8 @@ export const productsDetails = [
         descricao:"base pele",
         preco: "100,00",
         categoria: "Face",
-        imagem:"https://images.unsplash.com/photo-1599733589046-10c005739ef9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        imagem:"https://images.unsplash.com/photo-1599733589046-10c005739ef9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        estoque: 10,
     },
     {
         id:4,
@@ -29,7 +36,8 @@ export const productsDetails = [
         descricao:"Creme facial com protetor solar",
         preco: "70,00",
         categoria: "Skincare",
-        imagem:"https://images.unsplash.com/photo-1643769993605-14aef20d9e33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+        imagem:"https://images.unsplash.com/photo-1643769993605-14aef20d9e33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        estoque: 20,
     },
     {
         id:5,
@@ -38,6 +46,7 @@ export const productsDetails = [
         preco: "50,00",
         imagem:"https://images.unsplash.com/photo-1635011340527-f7aeac346b01?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
         categoria:"Boca",
+        estoque: 35,
     },
     {
         id:6,
@@ -45,7 +54,8 @@ export const productsDetails = [
         descricao:"cor preto",
         preco: "20,00",
         categoria:"Olhos",
-        imagem:"https://images.unsplash.com/photo-1631214499031-6845d10b7694?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80"
+        imagem:"https://images.unsplash.com/photo-1631214499031-6845d10b7694?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
+        estoque: 15,
     },
     {
         id:7,
@@ -53,7 +63,8 @@ export const productsDetails = [
         descricao:"Ideal para a área dos olhos, teste e nariz",
         preco: "80,00",
         categoria:"Face",
-        imagem:"https://images.unsplash.com/photo-1515688594390-b649af70d282?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=806&q=80"
+        imagem:"https://images.unsplash.com/photo-1515688594390-b649af70d282?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=806&q=80",
+        estoque: 18,
     },
     {
         id:8,
@@ -61,7 +72,8 @@ export const productsDetails = [
         descricao:"Bífásico para pele mista",
         preco: "80,00",
         categoria:"Skincare",
-        imagem:"https://images.unsplash.com/photo-1641964946680-ca49851359af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=423&q=80"    
+        imagem:"https://images.unsplash.com/photo-1641964946680-ca49851359af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=423&q=80",
+        estoque: 5,
     },
     {
         id:9,
@@ -69,7 +81,8 @@ export const productsDetails = [
         descricao:"Rímel de longa duração, cor preto",
         preco: "65,00",
         categoria:"Olhos",
-        imagem:"https://images.unsplash.com/photo-1631214540553-ff044a3ff1d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+        imagem:"https://images.unsplash.com/photo-1631214540553-ff044a3ff1d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+        estoque: 45,
     },
     {
         id:10,
@@ -77,7 +90,8 @@ export const productsDetails = [
         descricao:"Kit com 8 pincéis de cerdas naturais",
         preco: "65,00",
         categoria:"Olhos",
-        imagem:"https://images.unsplash.com/photo-1631214500020-e56e3d7eabb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80"
+        imagem:"https://images.unsplash.com/photo-1631214500020-e56e3d7eabb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
+        estoque: 15,
     },
     {
         id:11,
@@ -85,7 +99,8 @@ export const productsDetails = [
         descricao:"Kit espuma de limpeza, tônico hidratante e hidratante facial para todos os tipos de peles",
         preco: "65,00",
         categoria:"Skincare",
-        imagem:"https://images.unsplash.com/photo-1595521969746-7d87f7480fc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1034&q=80"
+        imagem:"https://images.unsplash.com/photo-1595521969746-7d87f7480fc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1034&q=80",
+        estoque: 14,
     },
     {
         id:12,
@@ -93,7 +108,8 @@ export const productsDetails = [
         descricao:"Protetor Solar da La Roche-Posay, fator 70, para todos os tipos de peles",
         preco: "65,00",
         categoria:"Skincare",
-        imagem:"https://images.unsplash.com/photo-1594527964562-32ed6eb11709?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=697&q=80"
+        imagem:"https://images.unsplash.com/photo-1594527964562-32ed6eb11709?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=697&q=80",
+        estoque: 16,
     },
     {
         id:13,
@@ -101,7 +117,8 @@ export const productsDetails = [
         descricao:"Corretivo ideal para a área dos olhos",
         preco: "65,00",
         categoria:"Face",
-        imagem:"https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        imagem:"https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        estoque: 24,
     },
     {
         id:14,
@@ -109,7 +126,8 @@ export const productsDetails = [
         descricao:"Contorno ideal para ser usado com esponjas",
         preco: "65,00",
         categoria:"Face",
-        imagem:"https://images.unsplash.com/photo-1598412795976-9c195182ee01?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+        imagem:"https://images.unsplash.com/photo-1598412795976-9c195182ee01?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        estoque: 12,
     },
     {
         id:15,
@@ -117,7 +135,8 @@ export const productsDetails = [
         descricao:"Iluminador líquido, ideal para utilizar na finalização da make",
         preco: "65,00",
         categoria:"Face",
-        imagem:"https://images.unsplash.com/photo-1585652757173-57de5e9fab42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+        imagem:"https://images.unsplash.com/photo-1585652757173-57de5e9fab42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        estoque: 14,
     },
     {
         id:16,
@@ -125,7 +144,8 @@ export const productsDetails = [
         descricao:"Estojo de sompra com píncel",
         preco: "65,00",
         categoria:"Olhos",
-        imagem:"https://images.unsplash.com/photo-1627260125421-da3b2f00108f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        imagem:"https://images.unsplash.com/photo-1627260125421-da3b2f00108f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        estoque: 15,
     },
     {
         id:17,
@@ -133,6 +153,7 @@ export const productsDetails = [
         descricao:"Kit com 4 esponjas para maquiar",
         preco: "65,00",
         categoria:"Face",
-        imagem:"https://images.unsplash.com/photo-1631214499995-468422da65d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=726&q=80"
+        imagem:"https://images.unsplash.com/photo-1631214499995-468422da65d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=726&q=80",
+        estoque: 12,
     },
    ]

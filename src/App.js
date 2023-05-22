@@ -1,10 +1,10 @@
 import NavBar from './components/navbar/NavBar';
 import React from 'react';
 import './styles/ListItensContents.css';
-import './styles/Navbar.css';
+import './styles/NavBar.css';
 import ListItensContents from './components/listItens/ListItensContents';
 import ItemDetailsContainer from './components/datails/ItemDetailsContainer';
-import "./styles/itemListDetails.css"
+import "./styles/itemListDetails.css";
 import { BrowserRouter, Routes ,Route} from 'react-router-dom';
 import NavBarCarrinho from './components/navbar/NavBarCarrinho';
 import NavBarLogin from './components/navbar/NavBarCarrinho';
