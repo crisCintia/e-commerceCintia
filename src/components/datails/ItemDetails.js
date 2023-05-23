@@ -8,7 +8,20 @@ import CartContextProvider, { useCartContext } from "../../contexts/CartContext"
 function ItemDetails({ cardItem }) {
     const [ammount, setAmmount] = useState(1);
     const naoAdicionado = true;
-    //const InputComponent = true ? CountItens : InputComponent;
+
+    /* Tentando fazer a validação se o item existe no carrinho ou não:
+    const valorCart = useCartContext();
+    
+    //let produtQtd = 0;
+    //valorCart.itens.forEach(p => produtQtd += p.ammount);
+    let productId = [];
+    valorCart.find(p=> productId.id === p.id);
+
+    const naoAdicionado = true;
+    if (productId.id !== cardItem.id){
+        naoAdicionado=false;
+    }*/
+
 
     function handleOnChangeQtd(qtd) {
         setAmmount(qtd);
@@ -26,9 +39,6 @@ function ItemDetails({ cardItem }) {
                 <p className=" CardDetailsNome ">R$ {cardItem.preco}</p>
                 <p> Descrição do produto: {cardItem.descricao}</p>
                 <p> Em estoque: {cardItem.estoque}</p>
-                {/*<p>Quantidade: <CountItens/></p> - PRIMEIRA APLICAÇÃO DA QUANTIDADE
-                    <button type="button" className=" buyButton btn btn-primary">Comprar</button>*/}
-                {/* ABAIXO A APLICAÇÃO APÓS A AULA 9 - EVENTOS*/}
                 {naoAdicionado ? <CountItens
                     stock={cardItem.estoque}
                     qtd={ammount}
