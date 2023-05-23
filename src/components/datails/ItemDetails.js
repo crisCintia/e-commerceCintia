@@ -29,6 +29,12 @@ function ItemDetails({ cardItem }) {
 
     const {addToCart} = useCartContext();
 
+    /*function addCart(qtd) {
+        if (cardItem.stock) {
+            console.log(`Item adicionado ao carrinho: ${cardItem.id} com ${qtd}`)
+        }
+    }*/
+
     return (
         <div className="container  cardDetailsContainer">
             <div className="cardDetailImageContent" >

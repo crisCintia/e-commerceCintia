@@ -82,6 +82,16 @@
     color: #000;
 }
 
+.qtdCarrinho {
+    font-size: 20px;
+    margin-right: 100px;
+    margin-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+
 .menuContents{
     display: flex;
     flex-direction: row;

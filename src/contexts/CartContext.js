@@ -1,8 +1,7 @@
 import {createContext, useContext, useState} from 'react';
-import ItemDetails from '../components/datails/ItemDetails';
+import { productsDetails } from '../components/datails/mockDetails/productsDetails';
 
 export const Cart = createContext([]);
-
 export const CartContext = createContext([]);
 export const useCartContext = () => useContext(CartContext);
 
@@ -11,13 +10,28 @@ export default function CartContextProvider({defaultValue={}, children}) {
     //{id:1, ammount:5}, {id:2, ammount:7} - exemplo
     //const [item, setItem] = useState()
 
+    const cart = productsDetails.map(p => ({
+        id:p.id,
+        nome: p.nome,
+        imagem: p.imagem,
+        preco: p.preco,
+        qtd: p.qtd,
+        subTotal: p.qtd * p.preco
+    }))
+
     function clear(){
         setItens([]);
     }
 
-    function getItemQtd(){
-        return itens.reduce((accumulator, currentValue) => parseInt(accumulator + currentValue.qtd), 0)
+    function getItemQtd(id){
+        if (itens.id ===id){
+            return itens.reduce((accumulator, currentValue) => parseInt(accumulator + currentValue.qtd), 0)
+        }      
     }
+
+    const total = itens.reduce((sumTotal, p) => {
+        return sumTotal +=p.qtd * parseInt(p.preco)
+    },0)
 
     function addToCart(id){
         const cartItens = [...itens];
@@ -36,7 +50,7 @@ export default function CartContextProvider({defaultValue={}, children}) {
         const cartItens = [...itens];
         const cartValid = cartItens.find((product) => product.id ===id);
 
-        if(cartValid.qtd >1){
+        if(cartValid >1){
             cartValid.qtd = parseInt(cartValid.qtd-1);
             setItens(cartValid);
         }else{

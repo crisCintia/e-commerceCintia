@@ -1,23 +1,38 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useCartContext } from "../../contexts/CartContext";
+import CountItens from "../listItens/CountItens";
+import { productsDetails } from "../datails/mockDetails/productsDetails";
 
 
+function CartItem({ }) {
+    const { itens, setItens, getItemQtd, clear, removeCart,sumTotal } = useCartContext();
+    const [ammount, setAmmount] = useState(1);
 
-function CartItem({ cardItem }) {
-    const { itens, getItemQtd, clear, removeCart } = useCartContext();
+    function ClickOnChangeQtd(qtd){
+        setAmmount(qtd);
+    }
+
+    const cart = productsDetails.map(p => ({
+        id:p.id,
+        nome: p.nome,
+        imagem: p.imagem,
+        preco: p.preco,
+        qtd: p.qtd,
+        subTotal: p.qtd * p.preco
+    }))
 
     return (
         <div className="container  cardDetailsContainer">
             <div className="cardDetailImageContent" >
-                <img src={cardItem.imagem} className=" cardDetailsImage" alt="Laptop" /><a href=""></a>
+                <img src={cart.imagem} className=" cardDetailsImage" alt="Laptop" />
             </div>
             <div className="cardDetailsItensContent">
-                <p>{cardItem.nome}</p>
-                <p className=" CardDetailsNome ">R$ {cardItem.preco}</p>
+                <p>{cart.nome}</p>
+                <p className=" CardDetailsNome ">R$ {cart.preco}</p>
                 <p>Quantidade:  {getItemQtd()}</p>
-                <ul>
-                    {itens.map(p => <li key={p.id}>p.ammount</li>)}
-                </ul>
+                {/*<CountItens stock={cardItem.estoque} qtd={ammount} onChangeQtd={ClickOnChangeQtd}><p>{getItemQtd()}</p></CountItens>*/}
+                <p>Valor Total: R$ {sumTotal}</p>
+                <button className="buyButton btn btn-primary" onClick={() => removeCart()}>Remover Item</button>
             </div>
         </div>
     )
