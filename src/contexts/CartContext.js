@@ -10,8 +10,6 @@ export default function CartContextProvider({defaultValue={}, children}) {
     const [itens, setItens] = useState([]);
 
     const isInTheCart = (id) => itens.find(i => i.id === id);
-    //{id:1, ammount:5}, {id:2, ammount:7} - exemplo
-    //const [item, setItem] = useState()
 
     function clear(){
         setItens([]);
