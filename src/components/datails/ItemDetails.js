@@ -1,15 +1,13 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import CountItens from "../listItens/CountItens";
 import { Link } from "react-router-dom";
-
+import CartContextProvider, { useCartContext } from "../../contexts/CartContext";
 
 
 function ItemDetails({ cardItem }) {
     const [ammount, setAmmount] = useState(1);
-
-    const naoAdicionado = true;
-
-    //const InputComponent = true ? CountItens : InputComponent;
+    const { addToCart, isInTheCart } = useCartContext();
+    const naoAdicionado = !isInTheCart(cardItem.id);
 
     function handleOnChangeQtd(qtd) {
         setAmmount(qtd);
@@ -33,9 +31,14 @@ function ItemDetails({ cardItem }) {
                     qtd={ammount}
                     onChangeQtd={handleOnChangeQtd} /> : <Link to="/cart"><button className="buyButton btn btn-primary">
                         Ir para o Carrinho</button></Link>}
-                <button className="buyButton btn btn-primary" onClick={() => {
-                    clearInterval(ammount); setAmmount(1); alert(ammount + " Produto(s) adicionado ao carrinho")
-                }}>Adicionar ao carrinho</button>
+                <button className="buyButton btn btn-primary"
+                    onClick={() => {
+                        setAmmount(1);
+                        addToCart(cardItem.id, ammount);
+                        alert(ammount + " Produto(s) adicionado ao carrinho")
+                    }}>
+                    Adicionar ao carrinho
+                </button>
             </div>
         </div>
     )
